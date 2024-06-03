@@ -1,6 +1,8 @@
 # Multi Agent Spatiotemporal Pfadplanung
 
 
+
+
 ## Systemaufbau
 
 Unser kleines System besteht aus dem Raspberry Pi und drei mobile Roboter. Auf dem Raspberry Pi läuft das Hauptprogram DStarLiteMain.py von D* für die Pfadplanung.
@@ -12,6 +14,10 @@ Unser Missionsgebiet ist 10 Felder breit und 7 Felder hoch. Jedes einzelne Feld 
 
 > Weiterentwicklungen wie A* verwenden für den Start zusätzlich eine erste Abschätzung welche Kanten von Knoten schneller zum Ziel führen könnten. Solche Abschätzungen nennt man auch Heuristiken und man findet sie in vielen Bereichen der Computertechnik. A* hat jedoch die Schwäche des Treffens des Roboters auf ein zuvor unbekanntes Hindernis, also eine Unterbrechung einer Kante, wird eine komplette Neuplanung vom aktuellen Standort bis zum Ziel durchgeführt. Allerdings, der D* Algorithmus verwendet hingegen Teile der vorherigen Planung weiter und ist somit schneller. Diese Algorithmen nennen sich als inkrementelle Planungsalgorithmen.
 
+
+## Simulation
+
+![/Pfadplanung_Program/Simulation/Multiagent_Simulation.png](https://github.com/lenigovi/Spatiotemporal-Pfadplanung/blob/main/Pfadplanung_Program/Simulation/Multiagent_Simulation.png)
 
 
 
