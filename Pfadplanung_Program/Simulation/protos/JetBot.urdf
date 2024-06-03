@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<robot name="C:/Users/lenih/1_RWTH/0_Projects/Pfadplanung/Spatiotemporal-Pfadplanung/Pfadplanung_Program/Simulation/protos/JetBot.urdf" xmlns:xacro="http://ros.org/wiki/xacro">
+  <link name="base_link">
+    <visual>
+      <origin xyz="-0.004 0 0.0565" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.13 0.085 0.023"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.004 0 0.0565" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.13 0.085 0.023"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-0.0129 0.0013 0.0843" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.098 0.08 0.029"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0129 0.0013 0.0843" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.098 0.08 0.029"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-0.0007 -0.034 0.0308" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.135 0.016 0.028"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0007 -0.034 0.0308" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.135 0.016 0.028"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-0.0007 0.034 0.0308" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.135 0.016 0.028"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0007 0.034 0.0308" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.135 0.016 0.028"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_wheel_hinge" type="continuous">
+    <parent link="base_link"/>
+    <child link="right wheel"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="5" velocity="50"/>
+    <origin xyz="0.03 -0.0595 0.03" rpy="0 0 1.570796"/>
+  </joint>
+  <link name="right wheel">
+    <visual>
+      <origin xyz="0.00401 0 0.000001" rpy="1.570796 0 -1.570796"/>
+      <geometry>
+        <cylinder radius="0.0299" length="0.0078"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.00401 0 0.000001" rpy="1.570796 0 -1.570796"/>
+      <geometry>
+        <cylinder radius="0.0299" length="0.0078"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_wheel_hinge" type="continuous">
+    <parent link="base_link"/>
+    <child link="left wheel"/>
+    <axis xyz="1 -0.000004 0"/>
+    <limit effort="5" velocity="50"/>
+    <origin xyz="0.03 0.05215 0.030001" rpy="0 0 1.5708"/>
+  </joint>
+  <link name="left wheel">
+    <visual>
+      <origin xyz="0.00401 0 0.000001" rpy="1.570796 0 -1.570796"/>
+      <geometry>
+        <cylinder radius="0.0299" length="0.0078"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.00401 0 0.000001" rpy="1.570796 0 -1.570796"/>
+      <geometry>
+        <cylinder radius="0.0299" length="0.0078"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="rear_wheel">
+    <visual>
+      <origin xyz="0 0 -0.012299" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.0127"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.012299" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.0127"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0.000001" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.0153" length="0.032"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.000001" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.0153" length="0.032"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_link_rear_wheel_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="rear_wheel"/>
+    <origin xyz="-0.051 0 0.025001" rpy="0 0 0"/>
+  </joint>
+  <link name="solid">
+  </link>
+  <joint name="base_link_solid_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="solid"/>
+    <origin xyz="0.0488 0 0.085" rpy="0 0.316799 0"/>
+  </joint>
+  <link name="camera">
+  </link>
+  <joint name="solid_camera_joint" type="fixed">
+    <parent link="solid"/>
+    <child link="camera"/>
+    <origin xyz="0.0005 0 0.0013" rpy="-1.570796 0 -1.570796"/>
+  </joint>
+  <link name="display">
+  </link>
+  <joint name="base_link_display_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="display"/>
+    <origin xyz="-0.0626 0.01027 0.0834" rpy="-0.000003 0.000001 -1.570795"/>
+  </joint>
+  <link name="base_link">
+  </link>
+</robot>
