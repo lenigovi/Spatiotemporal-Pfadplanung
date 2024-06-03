@@ -1,9 +1,9 @@
-# Multi-Agent Spatiotemporal Pfadplanung
+# Multi Agent Spatiotemporal Pfadplanung
 
 
 ## Systemaufbau
 
-Unser kleines System besteht aus dem Raspberry Pi und einem mobilen Roboter. Auf dem Raspberry Pi läuft das Hauptprogram DStarLiteMain.py von D* für die Pfadplanung.
+Unser kleines System besteht aus dem Raspberry Pi und drei mobile Roboter. Auf dem Raspberry Pi läuft das Hauptprogram DStarLiteMain.py von D* für die Pfadplanung.
 
 Unser Missionsgebiet ist 10 Felder breit und 7 Felder hoch. Jedes einzelne Feld ist 40cm x 40cm groß. Die Feldgröße orientiert sich an der Größe des Roboters plus einem Spielraum um den Roboter herum.
 
