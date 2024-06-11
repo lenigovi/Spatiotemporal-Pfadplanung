@@ -88,7 +88,7 @@ Moose {
   rotation -0.051644045769044744 -0.1077990437045172 -0.9928304279749873 1.7674434341500345
   name "Moose-Alpha"
   controller "moose_path_following"
-  color 0.866667 1 0
+  color 0 0 0
   bodySlot [
     Compass {
     }
@@ -101,7 +101,7 @@ Moose {
   rotation 0.22126895519120343 -0.017161896524573776 -0.975061802541907 1.01615
   name "Moose-Beta"
   controller "moose_path_following"
-  color 0 0 0
+  color 0.866667 1 0
   bodySlot [
     Compass {
     }
