@@ -20,6 +20,14 @@ Unser Missionsgebiet ist 10 Felder breit und 7 Felder hoch. Jedes einzelne Feld 
 ![/Pfadplanung_Program/Simulation/Multiagent_Simulation.png](https://github.com/lenigovi/Spatiotemporal-Pfadplanung/blob/main/Pfadplanung_Program/Simulation/Multiagent_Simulation.png)
 
 
+## Tutorial
+
+### Der Aufbau des ersten Roboters 
+
+3D gedruckte Leiterplatte             |  Raspberry Pi Verbindung und Zwei Motoren
+:-------------------------:|:-------------------------:
+![IMG_5943](https://github.com/lenigovi/Spatiotemporal-Pfadplanung/assets/145778326/741c7065-8dbd-45d2-af04-29ed423433b1) |  ![IMG_5937](https://github.com/lenigovi/Spatiotemporal-Pfadplanung/assets/145778326/e8c7a905-1657-4614-b84f-46b776adf872)
+
 
 
 
