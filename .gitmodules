@@ -1,3 +1,6 @@
 [submodule "robot-hat"]
 	path = robot-hat
 	url = https://github.com/sunfounder/robot-hat
+[submodule "Dstar-lite-pathplanner"]
+	path = Dstar-lite-pathplanner
+	url = https://github.com/Sollimann/Dstar-lite-pathplanner
