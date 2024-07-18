@@ -1,0 +1,3 @@
+[submodule "robot-hat"]
+	path = robot-hat
+	url = https://github.com/sunfounder/robot-hat
